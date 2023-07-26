@@ -53,7 +53,7 @@ const config = {
     },
   },
   scripts: [
-    { src: '//g.alicdn.com/mamba/mse-arc-ui/0.0.1/umd/mse-arc-ui.min.js' },
+    { src: '//g.alicdn.com/mamba/mse-arc-ui/0.0.3/umd/mse-arc-ui.min.js' },
     {
       src: '//g.alicdn.com/alilog/mlog/aplus_v2.js',
       id: 'beacon-aplus',
@@ -69,7 +69,7 @@ const config = {
   ],
   stylesheets: [
     {
-      href: '//g.alicdn.com/mamba/mse-arc-ui/0.0.1/umd/mse-arc-ui.min.css',
+      href: '//g.alicdn.com/mamba/mse-arc-ui/0.0.3/umd/mse-arc-ui.min.css',
     },
   ],
   plugins: [
@@ -113,6 +113,8 @@ const config = {
               banner: 'none'
             },
             '2022.0.0.0': {
+              // Add routing path configuration to solve the release notes mapping problem when the version is released
+              path: '/2022.0.0.0',
               banner: 'none'
             },
             '2021.0.5.0': {
@@ -287,7 +289,7 @@ const config = {
       },
       prism: {
         theme: lightCodeTheme,
-        additionalLanguages: ['java', 'properties'],
+        additionalLanguages: ['java', 'properties', 'sql'],
       },
     }),
 };
